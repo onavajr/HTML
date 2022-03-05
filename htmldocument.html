@@ -150,7 +150,6 @@
         </table>
 
         <button onclick="document.location='link.html'">Link to </button>
-        <br id="bottom">
         <a href="https://www.google.com" title="Go to google.com">Click here for search engine</a>
         <img src="https://i.insider.com/5ba14088e199f35a2e8b52bb?width=1000&format=jpeg&auto=webp"
             alt="work place"
@@ -220,5 +219,34 @@
                 document.getElementById("welcome").innerHTML = "Have a nice day!"
             }
         </script>
+        <iframe src="https://www.ggshoppers.com" title="search">google.com</iframe>
+        <button onclick="document.getElementById('timedate').innerHTML = Date()">Click to display time and date</button>
+        <p id="timedate"></p>
+        <h1 id="date"></h1>
+        <script>
+            document.getElementById('date').innerHTML = Date();
+            document.getElementById('date').style.color = "white";
+            document.getElementById('date').style.backgroundColor = "gray";
+            document.getElementById('date').style.border = "1px solid black";
+            document.getElementById('date').style.padding = "50px"
+        </script>
+        <h1>My first java script</h1>
+        <script>
+            function ligth(sw) {
+                var pic;
+                if (sw == 0){
+                    pic = "pic_bulboff.gif"
+                } else {
+                    pic = "pic_bulbon.gif"
+                }
+                document.getElementById("bulb").src = pic;
+            }
+        </script>
+        <img id="bulb" src="pic_bulboff.gif" width="100" height="180">
+        <p>Turning on and off light bulb</p>
+        <button type="button" onclick="ligth(1)">Light On</button>
+        <button type="button" onclick="light(0)">Light OFF</button>
+        
+        <br id="bottom">
     </body>
 </html>
