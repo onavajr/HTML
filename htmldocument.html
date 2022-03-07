@@ -10,7 +10,9 @@
             h1      {color: blue;}
             p       {color:red}
         </style>
+        <meta http-equiv="refresh" content="10">
         -->
+        <base href="https://www.w3schools.com/" target="_blank">
     </head>
     <body>
         <h1> <a href="#bottom">Go to bottom of this page</a></h1>
@@ -232,21 +234,23 @@
         </script>
         <h1>My first java script</h1>
         <script>
-            function ligth(sw) {
-                var pic;
-                if (sw == 0){
-                    pic = "pic_bulboff.gif"
-                } else {
-                    pic = "pic_bulbon.gif"
-                }
-                document.getElementById("bulb").src = pic;
+            function light(sw) {
+              var pic;
+              if (sw == 0) {
+                pic = "pic_bulboff.gif"
+              } else {
+                pic = "pic_bulbon.gif"
+              }
+              document.getElementById('myImage').src = pic;
             }
-        </script>
-        <img id="bulb" src="pic_bulboff.gif" width="100" height="180">
-        <p>Turning on and off light bulb</p>
-        <button type="button" onclick="ligth(1)">Light On</button>
-        <button type="button" onclick="light(0)">Light OFF</button>
-        
+            </script>
+
+            <img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+            
+            <p>
+            <button type="button" onclick="light(1)">Light On</button>
+            <button type="button" onclick="light(0)">Light Off</button>
+            </p>
         <br id="bottom">
     </body>
 </html>
