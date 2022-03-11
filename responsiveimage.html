@@ -15,6 +15,11 @@
         </p>
         <!--<img style="width: 100%;" src="../html/img_girl.jpg">-->
         <img style="max-width: 100%;height: auto;" src="../html/img_girl.jpg">
-
-    </body>
+        <picture>
+            <source srcset="img_girl.jpg" media="(max-width: 600px)">
+            <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+            <source srcset="img_girl.jpg">
+            <img src="img_flowers.jpg" alt="Flowers" style="width:auto">
+        </picture>
+        <h1 style="font-size:10vw">Hello World</h1>
 </html>
