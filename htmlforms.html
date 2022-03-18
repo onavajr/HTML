@@ -44,8 +44,24 @@
                 <option value="C">
                 <option value="D">
             </datalist>
+            <br>
+            <label for="cars">Cars</label>
+            <select name="cars" id="cars">
+                <option value="honda">Honda</option>
+                <option value="toyota">Toyota</option>
+                <option value="hundai">Hundai</option>
+            </select>
+
+
         </form>
-        
+
+        <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            <input type="range" id="a" value="50">100 +
+            <input type="number" id="b" value="50">=
+            <output name="x" for="a b"></output>
+            <br><br>
+            <input type="submit">
+        </form>
     </body>
         
 </html>
