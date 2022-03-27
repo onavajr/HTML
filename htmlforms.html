@@ -13,7 +13,9 @@
         <style>
             #div1 {
               width: 350px;
-              height: 70px;
+              height: 
+              
+                70px;
               padding: 10px;
               border: 1px solid #aaaaaa;
             }
@@ -173,6 +175,17 @@
 <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
 <img id="drag1" src="img_flowers.jpg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+
+<div id="result"></div>
+<script>
+  if(typeof(Storage) !=="undefined"){
+    localStorage.setItem("lastname", "Orlando");
+    document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+  }else{
+    document.getElementById("result").innerHTML = "Sorry, yourbrowser does not support web storage...";
+
+  }
+</script>
     </body>
         
 </html>
